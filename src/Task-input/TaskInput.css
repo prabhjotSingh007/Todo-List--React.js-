@@ -1,0 +1,91 @@
+.Todo-box {
+    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  }
+  .todo-box-conatiner {
+    padding: 50px 10px;
+  }
+  .heading {
+    font-size: 50px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  span{
+    -webkit-text-stroke: 3px black;
+    color: transparent;
+  }
+  .input-box {
+    background: #fff;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  .input-box .input {
+    border-radius: 21px ;
+    padding: 5px 19px ;
+  }
+  .input-box .input:focus {
+  
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 2.5px rgb(227, 188, 62);
+  }
+  .input-box .add-btn {
+    min-width: 106px;
+    border-radius: 60px;
+    background: #36c0b5;
+    border: 1px solid transparent;
+  }
+  .input-box .add-btn:hover {
+    background: #24857e;
+    outline: 0;
+    box-shadow: none;
+  }
+  .input-box .add-btn:focus{
+    box-shadow: none;
+  }
+
+
+  .list-box {
+    margin-top: 29px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  .list-box .scroll-box{
+    min-height: 400px;
+    overflow-y: scroll;
+    max-height: 400px;
+  }
+
+  @media(min-width:100px){
+    .container{
+      max-width: 780px;
+    }
+  }
+  @media(max-width:1500px){
+    .Todo-box{
+      height: 100% !important;
+    }
+  }
+  @media( max-width:600px){
+    .input-box .form-group {
+      width: 100% !important;
+      flex-direction: column;
+      gap: 10px;
+      padding: 5px 10px;
+      align-items: flex-end;
+    }
+    .input-box .form-group input {
+      width: 100% !important;
+    }
+    .input-box .form-group .add-btn {
+      width: 150px;
+    }
+    .todo-box-conatiner {
+      padding: 30px 10px;
+    }
+    .heading {
+      font-size: 35px;
+    }
+  }

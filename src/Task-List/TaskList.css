@@ -1,0 +1,38 @@
+.delete-btn i{
+    color: #fd0f0f;
+}
+.list-container .list .text-box .task-name {
+    font-size: 18px;
+    color: #000000b0;
+  }
+  .list-container .list .text-box .task-name::first-letter{
+    text-transform: capitalize;
+  }
+  .list-container .list .text-box input {
+    accent-color: #5cbf9b;
+    color: #FFF;
+    width: 17px;
+    height: 17px;
+  }
+  .list-item.mb-0 {
+    list-style: none;
+  }
+  .list-container .list {
+    margin-bottom: 5px;
+  }
+
+  .list-container .list:last-child{
+    margin-bottom: 0    ;
+  }
+  .btn.delete-btn.p-0.pe-3:focus {
+    box-shadow: none;
+  }
+
+  .text-decoration-line-through{
+    text-decoration-thickness: 2px !important;
+  }
+  @media(max-width:600px){
+    .list-container .list .text-box .task-name {
+      font-size: 16px;
+    }
+  }
